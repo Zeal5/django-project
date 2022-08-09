@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block start %}
+
+{% for book in object_list %}
+{{ book.title }} - {{book.price}} <br>
+{% endfor %}
+
+{% endblock %}
